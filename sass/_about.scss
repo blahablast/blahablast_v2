@@ -1,0 +1,83 @@
+.grid-container {
+  max-width: 120rem;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+#about {
+  &-a {
+    .about-info {
+      display: grid;
+      grid-template-areas:
+        "bioimage bio bio"
+        "aw1 aw2 aw3";
+      gap: 1.2rem;
+    }
+
+    .bio-image {
+      grid-area: bioimage;
+
+      @include respond(phone) {
+        max-width: 75%;
+        padding-left: 16rem;
+        padding-bottom: 3rem;
+      }
+    }
+
+    .bio {
+      grid-area: bio;
+      background: linear-gradient(
+        rgba(rgb(173, 239, 209), 0.8),
+        rgba(rgb(0, 32, 63), 0.8)
+      );
+      border-left: 0.3rem solid $mint;
+      padding: 0.8rem;
+
+      h4 {
+        color: $sailor-blue;
+        font-size: 2.5rem;
+        font-weight: 400;
+        padding: 2.8rem 0;
+      }
+
+      p {
+        font-size: 1.7rem;
+        line-height: 1.6;
+        color: whitesmoke;
+      }
+    }
+
+    .award-1 {
+      grid-area: aw1;
+    }
+
+    .award-2 {
+      grid-area: aw2;
+    }
+
+    .award-3 {
+      grid-area: aw3;
+    }
+  }
+}
+
+.work-title {
+  font-size: 2.3rem;
+  color: $sailor-blue;
+  font-weight: 500;
+  padding: 2rem 0;
+}
+
+.work-content {
+  font-size: 1.9rem;
+  color: white;
+  padding-right: 2.3rem;
+}
+
+.work-ul {
+  font-size: 2rem;
+  padding-top: 2rem;
+  color: $mint;
+  font-weight: 400;
+}
