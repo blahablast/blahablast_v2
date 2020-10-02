@@ -45,19 +45,23 @@
         font-size: 1.7rem;
         line-height: 1.6;
         color: whitesmoke;
+        text-align: justify;
       }
     }
 
     .award-1 {
       grid-area: aw1;
+      text-align: justify;
     }
 
     .award-2 {
       grid-area: aw2;
+      text-align: justify;
     }
 
     .award-3 {
       grid-area: aw3;
+      text-align: justify;
     }
   }
 }
