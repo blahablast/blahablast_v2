@@ -20,6 +20,7 @@
 
       @include respond(phone) {
         max-width: 90%;
+        max-height: auto;
         padding-left: 5rem;
         padding-bottom: 3rem;
       }
