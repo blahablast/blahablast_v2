@@ -19,7 +19,7 @@
       grid-area: bioimage;
 
       @include respond(phone) {
-        max-width: 90%;
+        max-width: 100%;
         padding-left: 5rem;
         padding-bottom: 3rem;
       }
